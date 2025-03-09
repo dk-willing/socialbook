@@ -1,0 +1,162 @@
+:root {
+  --blue-col: #1876f2;
+  --green-col: #41db51;
+  --light-blue: #cdbffa;
+  --dark-col: #626262;
+
+  --gray-col: #efefef;
+
+  /* Spacing */
+  --ml: 15px;
+  --container-width: 5px 5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--gray-col);
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--blue-col);
+  padding: var(--container-width);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left .logo img {
+  width: 150px;
+  margin-right: 40px;
+}
+
+.nav-left ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.nav-left ul li a ion-icon {
+  color: #fff;
+  font-size: 24px;
+  --ionicon-stroke-width: 36px;
+}
+
+.nav-user-icon img {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.nav-user-icon {
+  position: relative;
+}
+
+.nav-user-icon::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: var(--green-col);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  width: 350px;
+  background-color: var(--gray-col);
+  border-radius: 20px;
+  padding: 0 15px;
+}
+
+.search-box ion-icon {
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+}
+
+.search-box input {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* Main Section */
+.container {
+  display: flex;
+  padding: 13px 5%;
+}
+
+.left-sidebar,
+.right-sidebar {
+  flex-basis: 25%;
+  position: sticky;
+  top: 70px;
+}
+
+.main-content {
+  flex-basis: 47%;
+}
+
+/* Leftside Bar */
+.imp-link {
+  border-bottom: 1px solid #ccc;
+}
+
+.imp-link a,
+.interest a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  width: fit-content;
+  color: var(--dark-col);
+}
+
+.imp-link a:last-child {
+  color: var(--blue-col);
+}
+
+.imp-link a ion-icon {
+  color: var(--blue-col);
+  margin-right: var(--ml);
+}
+
+.interest a img {
+  width: 40px;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.interest p {
+  margin: 30px 0;
+  font-weight: 500;
+  color: var(--dark-col);
+}
