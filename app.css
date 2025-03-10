@@ -32,7 +32,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: var(--blue-col);
-  padding: var(--container-width);
+  padding: 5px 5%;
 
   position: sticky;
   top: 0;
@@ -112,6 +112,7 @@ nav {
 /* Main Section */
 .container {
   display: flex;
+  justify-content: space-between;
   padding: 13px 5%;
 }
 
@@ -120,6 +121,7 @@ nav {
   flex-basis: 25%;
   position: sticky;
   top: 70px;
+  width: fit-content;
 
   align-self: flex-start;
 }
