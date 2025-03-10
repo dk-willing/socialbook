@@ -72,7 +72,7 @@ nav {
   position: relative;
 }
 
-.nav-user-icon::after {
+.online::after {
   content: "";
   width: 7px;
   height: 7px;
@@ -229,4 +229,10 @@ nav {
 .event-details a {
   color: var(--blue-col);
   font-size: 12px;
+}
+
+.sidebar-ads {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 20px;
 }
