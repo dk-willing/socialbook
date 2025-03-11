@@ -401,3 +401,102 @@ nav {
 .add-post-links a img {
   width: 20px;
 }
+
+/* Post */
+.icon-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #444;
+}
+
+.icon-row a {
+  color: var(--dark-col);
+}
+
+/* Post Container */
+.post-container {
+  background: #fff;
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 6px;
+  color: #444;
+}
+
+.user-profile span {
+  font-size: 13px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #333;
+}
+
+.post-content {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.post-content span {
+  font-weight: 600;
+  color: #111;
+}
+
+.post-content a {
+  color: var(--blue-col);
+}
+
+.post-img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.engagement-icons {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.engagement-icons div {
+  display: inline-flex;
+  gap: 5px;
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.engagement-icons div img {
+  width: 18px;
+}
+
+.user-profile-icon {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.user-profile-icon img {
+  width: 20px;
+  border-radius: 50%;
+}
+
+.user-profile-icon ion-icon {
+  font-size: 10px;
+}
+
+.load-more-btn {
+  padding: 5px 10px;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid #333;
+  color: #333;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  color: #9a9a9a;
+  font-size: 13px;
+  padding: 10px 0 20px;
+}
