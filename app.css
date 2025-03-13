@@ -1,14 +1,38 @@
 :root {
   --blue-col: #1876f2;
+  --nav-blue-col: #1876f2;
   --green-col: #41db51;
   --light-blue: #cdbffa;
   --dark-col: #626262;
+  --white: #fff;
+  --icon-white: #fff;
+  --story-text-col: #fff;
 
   --gray-col: #efefef;
+  --search-icon: #333;
+
+  /* Box Shadow */
+  --box-shadow-col: rgba(0, 0, 0, 0.1);
+
+  /* App Theme */
+  --light: #ccc;
 
   /* Spacing */
   --ml: 15px;
   --container-width: 5px 5%;
+}
+
+.dark-theme {
+  --white: #222;
+  --nav-blue-col: #495057;
+  --dark-col: #e9ecef;
+  --gray-col: #343a40;
+  --search-icon: #fff;
+  --story-text-col: #fff;
+
+  --box-shadow-col: rgba(255, 255, 255, 0.1);
+
+  --icon-white: #fff;
 }
 
 * {
@@ -20,6 +44,7 @@
 body {
   background-color: var(--gray-col);
   font-family: "Poppins", sans-serif;
+  transition: all 0.3s;
 }
 
 a {
@@ -31,7 +56,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--blue-col);
+  background-color: var(--nav-blue-col);
   padding: 5px 5%;
 
   position: sticky;
@@ -57,7 +82,7 @@ nav {
 }
 
 .nav-left ul li a ion-icon {
-  color: #fff;
+  color: var(--icon-white);
   font-size: 24px;
   --ionicon-stroke-width: 36px;
 }
@@ -76,7 +101,7 @@ nav {
   content: "";
   width: 7px;
   height: 7px;
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
   border-radius: 50%;
   background-color: var(--green-col);
   position: absolute;
@@ -96,7 +121,7 @@ nav {
 
 .search-box ion-icon {
   font-size: 18px;
-  color: #333;
+  color: var(--search-icon);
   cursor: pointer;
 }
 
@@ -115,9 +140,9 @@ nav {
   right: 5%;
   top: 108%;
   width: 350px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 4px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px var(--box-shadow-col);
   max-height: 0;
   overflow: hidden;
 
@@ -181,6 +206,33 @@ nav {
   color: var(--dark-col);
 }
 
+/* Theme Button */
+#theme-btn {
+  position: absolute;
+  display: flex;
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  border-radius: 15px;
+  padding: 2px 3px;
+  background-color: var(--light);
+
+  transition: all 0.5s;
+}
+
+#theme-btn span {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: var(--white);
+}
+
+#theme-btn.dark-mode {
+  padding-left: 23px;
+  background-color: var(--dark-col);
+}
+
 /* Main Section */
 .container {
   display: flex;
@@ -239,7 +291,7 @@ nav {
 
 /* Right Sidebar */
 .right-sidebar {
-  background: #fff;
+  background: var(--white);
   padding: 20px;
   border-radius: 4px;
   color: var(--dark-col);
@@ -277,7 +329,7 @@ nav {
   font-size: 12px;
   position: relative;
   margin-right: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px var(--box-shadow-col);
 }
 
 .event-date span {
@@ -356,7 +408,7 @@ nav {
   position: absolute;
   text-align: center;
   width: 100%;
-  color: #fff;
+  color: var(--story-text-col);
   bottom: 10px;
   font-size: 14px;
 }
@@ -406,7 +458,7 @@ nav {
 
 /* Write post container */
 .write-post-container {
-  background-color: #fff;
+  background-color: var(--white);
   color: var(--dark-col);
   padding: 20px;
   width: 100%;
@@ -428,6 +480,7 @@ nav {
 .user-profile p {
   font-weight: 500;
   margin-bottom: -2px;
+  color: var(--dark-col);
 }
 
 .user-profile p i {
@@ -488,11 +541,11 @@ nav {
 
 /* Post Container */
 .post-container {
-  background: #fff;
+  background: var(--white);
   margin: 15px 0;
   padding: 20px;
   border-radius: 6px;
-  color: #444;
+  color: var(--dark-col);
 }
 
 .user-profile span {
@@ -500,7 +553,7 @@ nav {
   display: flex;
   gap: 5px;
   align-items: center;
-  color: #333;
+  color: var(--dark-col);
 }
 
 .post-content {
@@ -511,7 +564,7 @@ nav {
 
 .post-content span {
   font-weight: 600;
-  color: #111;
+  color: var(--dark-col);
 }
 
 .post-content a {
@@ -527,6 +580,7 @@ nav {
   display: flex;
   align-items: center;
   margin: 15px 0;
+  color: var(--dark-col);
 }
 
 .engagement-icons div {
@@ -538,6 +592,7 @@ nav {
 
 .engagement-icons div img {
   width: 18px;
+  color: var(--dark-col);
 }
 
 .user-profile-icon {
@@ -553,14 +608,15 @@ nav {
 
 .user-profile-icon ion-icon {
   font-size: 10px;
+  color: var(--dark-col);
 }
 
 .load-more-btn {
   padding: 5px 10px;
   border-radius: 4px;
   background: transparent;
-  border: 1px solid #333;
-  color: #333;
+  border: 1px solid var(--dark-col);
+  color: var(--dark-col);
   display: block;
   margin: auto;
   cursor: pointer;
