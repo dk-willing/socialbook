@@ -717,10 +717,70 @@ nav {
   display: inline-flex;
   background-color: var(--light);
   margin-top: 30px;
-  border-radius: 3px;
+  border-radius: 4px;
   padding: 12px;
 }
 
 .pd-right a img {
   width: 20px;
+}
+
+.profile-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.info-col {
+  flex-basis: 33%;
+}
+
+.post-col {
+  flex-basis: 65%;
+}
+
+.post-col .write-post-container {
+  margin: 0;
+}
+
+.profile-intro {
+  background-color: var(--white);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.profile-intro h3 {
+  font-weight: 600;
+}
+
+.profile-intro p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.profile-intro p img {
+  width: 14px;
+  margin-bottom: -3px;
+}
+
+.profile-intro hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--dark-col);
+  margin: 24px 0;
+}
+
+.profile-intro ul li {
+  list-style: none;
+  font-size: 12px;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.profile-intro ul li img {
+  width: 26px;
+  margin-right: 10px;
 }
