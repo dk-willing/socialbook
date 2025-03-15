@@ -628,3 +628,99 @@ nav {
   font-size: 13px;
   padding: 10px 0 20px;
 }
+
+/* --------- PROFILE PAGE --------- */
+.profile-container {
+  padding: 20px 15%;
+  color: var(--dark-col);
+}
+
+.cover-img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.profile-details {
+  display: flex;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: var(--white);
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.pd-row {
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.pd-row img {
+  width: 100px;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.pd-row div h3 {
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pd-row div h3 i {
+  color: var(--blue-col);
+  display: inline-block;
+  font-size: 14px;
+}
+
+.pd-row div p {
+  font-size: 12px;
+}
+
+.pd-row div img {
+  width: 20px;
+  border-radius: 50%;
+  margin: 0;
+  margin-top: 12px;
+}
+
+.pd-right {
+  text-align: right;
+}
+
+.pd-right button {
+  padding: 6px 20px;
+  border: 0;
+  outline: 0;
+  background-color: var(--blue-col);
+  color: #fff;
+  border-radius: 4px;
+  margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.pd-right button:first-child {
+  background-color: var(--light);
+  color: #000;
+}
+
+.pd-right button img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.pd-right a {
+  display: inline-flex;
+  background-color: var(--light);
+  margin-top: 30px;
+  border-radius: 3px;
+  padding: 12px;
+}
+
+.pd-right a img {
+  width: 20px;
+}
