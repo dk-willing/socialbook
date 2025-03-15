@@ -11,6 +11,8 @@
   --gray-col: #efefef;
   --search-icon: #333;
 
+  --input-col: #000;
+
   /* Box Shadow */
   --box-shadow-col: rgba(0, 0, 0, 0.1);
 
@@ -33,6 +35,8 @@
   --box-shadow-col: rgba(255, 255, 255, 0.1);
 
   --icon-white: #fff;
+
+  --input-col: #fff;
 }
 
 * {
@@ -132,6 +136,7 @@ nav {
   padding: 10px;
   width: 100%;
   border-radius: 20px;
+  color: var(--input-col);
 }
 
 /* Dropdown */
@@ -504,6 +509,7 @@ nav {
   outline: 0;
   background-color: transparent;
   border-bottom: 1px solid #ccc;
+  color: var(--input-col);
   resize: none;
   width: 100%;
 }
