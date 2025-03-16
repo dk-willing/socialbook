@@ -1,0 +1,106 @@
+@media (max-width: 72rem) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .left-sidebar {
+    flex-basis: 20%;
+  }
+
+  .add-post-links a img {
+    width: 1.5rem;
+  }
+}
+
+@media (max-width: 63rem) {
+  html {
+    font-size: 50%;
+  }
+
+  .left-sidebar {
+    flex-basis: 20%;
+  }
+
+  .right-sidebar {
+    flex-basis: 27%;
+  }
+
+  .main-content {
+    flex-basis: 50%;
+  }
+
+  .add-post-links a img {
+    width: 1rem;
+  }
+
+  .right-sidebar h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 54rem) {
+  .nav-left .logo img {
+    width: 12rem;
+  }
+  .right-sidebar {
+    display: none;
+  }
+
+  .left-sidebar {
+    flex-basis: 24%;
+  }
+
+  .main-content {
+    flex-basis: 75%;
+  }
+
+  .nav-left ul li {
+    margin: 0 10px;
+  }
+
+  .search-box {
+    width: 30rem;
+  }
+
+  .nav-left ul li a ion-icon {
+    font-size: 1.8rem;
+  }
+
+  .search-box input {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 38rem) {
+  .story-gallery {
+    width: 95%;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .left-sidebar {
+    display: none;
+  }
+
+  .main-content {
+    flex-basis: 95%;
+    margin: 0 auto;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .add-post-links a {
+    margin-right: 15px;
+    font-size: 1.2rem;
+    gap: 5px;
+  }
+
+  #theme-btn.dark-mode {
+    padding-left: 20px;
+  }
+}
