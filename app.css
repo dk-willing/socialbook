@@ -1,3 +1,16 @@
+/* 
+
+
+---------- Font Sizes -------------
+12px / 14px / 16px / 18px / 20px / 24px / 32px / 40px / 44px / 60px / 64px 
+
+
+
+----------- Spacing ----------------
+2px / 4px / 6px / 8px / 10px / 14px / 22px / 30px / 40px / 44px / 60px 
+
+*/
+
 :root {
   --blue-col: #1876f2;
   --nav-blue-col: #1876f2;
@@ -39,6 +52,10 @@
   --input-col: #fff;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -61,7 +78,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: var(--nav-blue-col);
-  padding: 5px 5%;
+  padding: 0.5rem 5%;
 
   position: sticky;
   top: 0;
@@ -75,7 +92,7 @@ nav {
 }
 
 .nav-left .logo img {
-  width: 150px;
+  width: 15rem;
   margin-right: 40px;
 }
 
@@ -87,12 +104,12 @@ nav {
 
 .nav-left ul li a ion-icon {
   color: var(--icon-white);
-  font-size: 24px;
+  font-size: 2.4rem;
   --ionicon-stroke-width: 36px;
 }
 
 .nav-user-icon img {
-  width: 40px;
+  width: 4rem;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -103,8 +120,8 @@ nav {
 
 .online::after {
   content: "";
-  width: 7px;
-  height: 7px;
+  width: 0.7rem;
+  height: 0.7rem;
   border: 2px solid var(--white);
   border-radius: 50%;
   background-color: var(--green-col);
@@ -117,14 +134,14 @@ nav {
   display: flex;
   align-items: center;
   margin-right: 30px;
-  width: 350px;
+  width: 35rem;
   background-color: var(--gray-col);
   border-radius: 20px;
   padding: 0 15px;
 }
 
 .search-box ion-icon {
-  font-size: 18px;
+  font-size: 1.8rem;
   color: var(--search-icon);
   cursor: pointer;
 }
@@ -144,7 +161,7 @@ nav {
   position: absolute;
   right: 5%;
   top: 108%;
-  width: 350px;
+  width: 35rem;
   background-color: var(--white);
   border-radius: 4px;
   box-shadow: 0 0 10px var(--box-shadow-col);
@@ -155,7 +172,7 @@ nav {
 }
 
 .setting-menu-height {
-  max-height: 450px;
+  max-height: 45rem;
 }
 
 .setting-menu-inner {
@@ -170,24 +187,24 @@ nav {
 }
 
 .setting-menu-inner .user-profile img {
-  width: 34px;
+  width: 3.4rem;
 }
 
 .setting-menu-inner .user-profile p {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .setting-menu-inner .user-profile p i {
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .setting-menu-inner .user-profile a {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: var(--blue-col);
 }
 
 .arrow-icon {
-  width: 6px;
+  width: 0.6rem;
 }
 
 .settings-icons-links {
@@ -197,13 +214,13 @@ nav {
 }
 
 .settings-icons-links .settings-icon {
-  width: 30px;
+  width: 3rem;
   margin-right: 15px;
   border-radius: 50%;
 }
 
 .settings-icons-links a {
-  font-size: 14px;
+  font-size: 1.4rem;
   display: flex;
   flex: 1;
   align-items: center;
@@ -215,9 +232,9 @@ nav {
 #theme-btn {
   position: absolute;
   display: flex;
-  top: 20px;
-  right: 20px;
-  width: 45px;
+  top: 2rem;
+  right: 2rem;
+  width: 4.5rem;
   border-radius: 15px;
   padding: 2px 3px;
   background-color: var(--light);
@@ -226,8 +243,8 @@ nav {
 }
 
 #theme-btn span {
-  width: 18px;
-  height: 18px;
+  width: 1.8rem;
+  height: 1.8rem;
   border-radius: 50%;
   display: inline-block;
   background-color: var(--white);
@@ -249,7 +266,7 @@ nav {
 .right-sidebar {
   flex-basis: 25%;
   position: sticky;
-  top: 70px;
+  top: 7rem;
   width: fit-content;
 
   align-self: flex-start;
@@ -268,6 +285,7 @@ nav {
 .interest a {
   display: flex;
   align-items: center;
+  font-size: 1.4rem;
   margin-bottom: 30px;
   width: fit-content;
   color: var(--dark-col);
@@ -283,12 +301,13 @@ nav {
 }
 
 .interest a img {
-  width: 40px;
+  width: 4rem;
   border-radius: 4px;
   margin-right: 15px;
 }
 
 .interest p {
+  font-size: 1.6rem;
   margin: 30px 0;
   font-weight: 500;
   color: var(--dark-col);
@@ -309,29 +328,29 @@ nav {
 }
 
 .right-sidebar h4 {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 600;
 }
 
 .title a {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: var(--blue-col);
 }
 
 .event {
   display: flex;
-  font-size: 14px;
+  font-size: 1.4rem;
   margin-bottom: 20px;
 }
 
 .event-date {
-  width: 65px;
-  height: 65px;
+  width: 6.5rem;
+  height: 6.5rem;
   border-radius: 10px;
-  padding-top: 10px;
+  padding-top: 1rem;
   text-align: center;
   overflow: hidden;
-  font-size: 12px;
+  font-size: 1.2rem;
   position: relative;
   margin-right: 15px;
   box-shadow: 0 0 10px var(--box-shadow-col);
@@ -344,11 +363,11 @@ nav {
   width: 100%;
   background: var(--blue-col);
   color: #fff;
-  padding: 4px 0;
+  padding: 0.4rem 0;
 }
 
 .event-details p {
-  font-size: 12px;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
 }
@@ -359,7 +378,7 @@ nav {
 
 .event-details a {
   color: var(--blue-col);
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .sidebar-ads {
@@ -375,20 +394,24 @@ nav {
   margin-bottom: 20px;
 }
 
+.online-list p {
+  font-size: 1.4rem;
+}
+
 .online-list .online img {
-  width: 40px;
+  width: 4rem;
   border-radius: 50%;
 }
 
 .online-list .online {
-  width: 40px;
+  width: 4rem;
   border-radius: 50%;
   margin-right: 15px;
 }
 
 .online-list .online::after {
   top: unset;
-  bottom: 5px;
+  bottom: 0.5rem;
 }
 
 /* Main Content */
@@ -415,14 +438,14 @@ nav {
   width: 100%;
   color: var(--story-text-col);
   bottom: 10px;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .story img {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 40px;
+  top: 1rem;
+  left: 1rem;
+  width: 4rem;
   border-radius: 50%;
   border: 2px solid var(--blue-col);
 }
@@ -453,10 +476,10 @@ nav {
 }
 
 .story.story-1 img {
-  width: 24px;
+  width: 2.4rem;
   border: 0;
   top: unset;
-  bottom: 40px;
+  bottom: 4rem;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -465,7 +488,7 @@ nav {
 .write-post-container {
   background-color: var(--white);
   color: var(--dark-col);
-  padding: 20px;
+  padding: 2rem;
   width: 100%;
   margin-top: 20px;
   border-radius: 6px;
@@ -478,11 +501,12 @@ nav {
 }
 
 .user-profile img {
-  width: 45px;
+  width: 4.5rem;
   border-radius: 50%;
 }
 
 .user-profile p {
+  font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: -2px;
   color: var(--dark-col);
@@ -495,13 +519,13 @@ nav {
 .user-profile small {
   display: flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 1.2rem;
 }
 
 /* Add Post */
 .add-post-container {
-  padding-left: 55px;
-  padding-top: 20px;
+  padding-left: 5.5rem;
+  padding-top: 2rem;
 }
 
 .add-post-container textarea {
@@ -525,12 +549,12 @@ nav {
   align-items: center;
   color: var(--dark-col);
   gap: 10px;
-  font-size: 14px;
+  font-size: 1.4rem;
   margin-right: 30px;
 }
 
 .add-post-links a img {
-  width: 20px;
+  width: 2rem;
 }
 
 /* Post */
@@ -549,13 +573,13 @@ nav {
 .post-container {
   background: var(--white);
   margin: 15px 0;
-  padding: 20px;
+  padding: 2rem;
   border-radius: 6px;
   color: var(--dark-col);
 }
 
 .user-profile span {
-  font-size: 10px;
+  font-size: 1.2rem;
   display: flex;
   gap: 5px;
   align-items: center;
@@ -564,7 +588,7 @@ nav {
 
 .post-content {
   margin: 10px 0;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 1.4;
 }
 
@@ -593,11 +617,11 @@ nav {
   display: inline-flex;
   gap: 5px;
   margin-right: 20px;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .engagement-icons div img {
-  width: 18px;
+  width: 1.8rem;
   color: var(--dark-col);
 }
 
@@ -608,17 +632,17 @@ nav {
 }
 
 .user-profile-icon img {
-  width: 20px;
+  width: 2rem;
   border-radius: 50%;
 }
 
 .user-profile-icon ion-icon {
-  font-size: 10px;
+  font-size: 1.2rem;
   color: var(--dark-col);
 }
 
 .load-more-btn {
-  padding: 5px 10px;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
   background: transparent;
   border: 1px solid var(--dark-col);
@@ -631,13 +655,13 @@ nav {
 .footer {
   text-align: center;
   color: #9a9a9a;
-  font-size: 13px;
+  font-size: 1.2rem;
   padding: 10px 0 20px;
 }
 
 /* --------- PROFILE PAGE --------- */
 .profile-container {
-  padding: 20px 15%;
+  padding: 2rem 15%;
   color: var(--dark-col);
 }
 
@@ -649,7 +673,7 @@ nav {
 
 .profile-details {
   display: flex;
-  padding: 20px;
+  padding: 2rem;
   border-radius: 4px;
   background-color: var(--white);
   align-items: flex-start;
@@ -662,13 +686,13 @@ nav {
 }
 
 .pd-row img {
-  width: 100px;
+  width: 10rem;
   border-radius: 4px;
   margin-right: 12px;
 }
 
 .pd-row div h3 {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -678,15 +702,15 @@ nav {
 .pd-row div h3 i {
   color: var(--blue-col);
   display: inline-block;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .pd-row div p {
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .pd-row div img {
-  width: 20px;
+  width: 2rem;
   border-radius: 50%;
   margin: 0;
   margin-top: 12px;
@@ -697,7 +721,7 @@ nav {
 }
 
 .pd-right button {
-  padding: 6px 20px;
+  padding: 0.6rem 2rem;
   border: 0;
   outline: 0;
   background-color: var(--blue-col);
@@ -715,7 +739,7 @@ nav {
 }
 
 .pd-right button img {
-  height: 20px;
+  height: 2rem;
   margin-right: 10px;
 }
 
@@ -724,11 +748,11 @@ nav {
   background-color: var(--light);
   margin-top: 30px;
   border-radius: 4px;
-  padding: 12px;
+  padding: 1.2rem;
 }
 
 .pd-right a img {
-  width: 15px;
+  width: 1.5rem;
 }
 
 .profile-info {
@@ -752,22 +776,23 @@ nav {
 
 .profile-intro {
   background-color: var(--white);
-  padding: 20px;
+  padding: 2rem;
   margin-bottom: 20px;
   border-radius: 4px;
 }
 
 .profile-intro h3 {
   font-weight: 600;
+  font-size: 1.6rem;
 }
 
 .profile-intro p {
   text-align: center;
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .profile-intro p img {
-  width: 14px;
+  width: 1.4rem;
   margin-bottom: -3px;
 }
 
@@ -780,14 +805,14 @@ nav {
 
 .profile-intro ul li {
   list-style: none;
-  font-size: 12px;
+  font-size: 1.2rem;
   margin: 15px 0;
   display: flex;
   align-items: center;
 }
 
 .profile-intro ul li img {
-  width: 26px;
+  width: 2.6rem;
   margin-right: 10px;
 }
 
@@ -800,7 +825,7 @@ nav {
 
 .photo-heading a {
   color: var(--blue-col);
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .photos-box {
@@ -833,7 +858,7 @@ nav {
 }
 
 .friends-box div img {
-  width: 30px;
+  width: 3rem;
   border-radius: 50%;
 
   display: inline-flex;
@@ -841,6 +866,6 @@ nav {
 }
 
 .friends-box div p {
-  font-size: 14px;
+  font-size: 1.4rem;
   cursor: pointer;
 }
